@@ -1,10 +1,7 @@
 import sys, os, re
 import time, datetime
 import getopt
-
-#TODO: move to commons file
-def wholeWordOnly(text, x, y):
-	return re.sub(r"\b%s\b" % re.escape(x), y, text)
+from filtersCommon import wholeWordOnly
 
 #print (wholeWordOnly("shit u ass", "u", "you"))
 #print (re.sub(r'\bu\b', 'you', "shit u ass"))

@@ -1,13 +1,13 @@
-import sys, os, re
-import time, datetime
-import getopt
-
 #USAGE: Drag and drop .sql backup-generated files onto this script.
 # - adds on top:
 #		drop schema `wordpress`;
 #		CREATE SCHEMA `wordpress`;
 #		use wordpress
 # - replaces machine name PARTOUT!
+
+import sys, os, re
+import time, datetime
+import getopt
 
 BAD_MACHINE_NAME = "mkorikov"
 
